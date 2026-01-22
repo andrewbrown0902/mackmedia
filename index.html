@@ -1,457 +1,1220 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mack Media | Indianapolis Wedding Photographer</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#c6a15d",
-                        "background-light": "#ffffff",
-                        "background-dark": "#111111",
-                        "neutral-grey": "#F7F7F7",
-                        "text-main": "#111111",
-                        "text-sub": "#6B6B6B"
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        "serif": ["Playfair Display", "serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-<style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        h1, h2, h3, .serif-font { font-family: 'Playfair Display', serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    </style>
-</head>
-<body class="bg-background-light text-text-main font-display">
-<header class="fixed top-0 z-50 w-full bg-black border-b border-white/10 px-6 lg:px-20 py-4 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<div class="size-8 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
-</svg>
-</div>
-<span class="text-white text-xl font-bold tracking-tight">Mack Media</span>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#portfolio">Portfolio</a>
-<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#packages">Packages</a>
-<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#process">Process</a>
-<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#faq">FAQ</a>
-<button class="bg-primary text-black px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">Check Availability</button>
-</nav>
-</header>
-<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-black/40 z-10"></div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic wedding couple laughing in golden hour" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPmoeLUfCFVGNgTJMAJOn4v7X0eX6vhY6-EpJYAkUIht6T7dRQo7c5jVrVla-D1wuHsWGAj-vm3d9DkHSBQoeIOTfasd426XpxzGyeTtLyflk7LSu-W31B67KCtPIWHOcGlFlAAAIvn0v6z6Gt3wtsb0IvBOlKYq6-Dzo5Oec7Zw3x2XU6-Uplo0Gw3xhqYo-yQW25GGp3TPK_uOA4lHs096OvEWOOxBOqJglM1y95bzXEDyiwsNn9qT9-GaqRnU9xo7irAVpofw");'></div>
-</div>
-<div class="relative z-20 max-w-5xl px-6 text-center text-white">
-<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight mb-6">
-            Indianapolis Wedding Photographer for <span class="text-primary italic">Timeless</span>, Story-Driven Weddings
-        </h1>
-<p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-            Candid, cinematic wedding photography that captures the raw emotion of your day. Packages starting from $1,800.
-        </p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-<button class="w-full sm:w-auto bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-black/20">
-                Check Your Date Availability
-            </button>
-<a class="text-white underline underline-offset-8 font-semibold hover:text-primary transition-colors py-2 px-4" href="#packages">
-                See Packages &amp; Starting Prices
-            </a>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-text-sub uppercase tracking-[0.2em] text-xs font-bold mb-4 font-display">Trusted By Local Couples</h2>
-<p class="text-4xl md:text-5xl font-bold text-text-main">Trusted by Indianapolis Couples Who Care About Their Story</p>
-<div class="flex items-center justify-center gap-4 mt-8">
-<div class="flex text-primary">
-<span class="material-symbols-outlined fill-[1]">star</span>
-<span class="material-symbols-outlined fill-[1]">star</span>
-<span class="material-symbols-outlined fill-[1]">star</span>
-<span class="material-symbols-outlined fill-[1]">star</span>
-<span class="material-symbols-outlined fill-[1]">star</span>
-</div>
-<span class="font-bold text-lg">5.0 Rating</span>
-<span class="text-text-sub font-medium">120+ Reviews</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
-<p class="italic text-text-sub mb-6">"Mack Media captured moments we didn't even know were happening. The storytelling is just incredible."</p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-cover" data-alt="Happy couple smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtRpfRMM39pPw_wMo-Is1OsuFo2Zo2gp0YLcpXBZX5m7Y5qi10qoE6STqS_yhgY0AlTQXrXZ5BQTMIz5nvQ4qnSAC4pUJAK9vRDrGROc2KhVmh1rb5JdrCs0oA2aGwcdahG0PNis8b55xDYn7qNABuQ2y7vQXo4kLuoLLEgND2AZRJVlZH1A4qB2nJC_g8wS28iiupU7JYZFVeb1EAVrXct1SeaoNndO0OkW2CQM_tvH6RxZj1d5u3CLfLLDzky6torD4MO0LMtA');"></div>
-<div>
-<p class="font-bold text-sm">Sarah &amp; James</p>
-<p class="text-xs text-text-sub">The Conrad, Indy</p>
-</div>
-</div>
-</div>
-<div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
-<p class="italic text-text-sub mb-6">"A calm presence on a hectic day. We felt so comfortable, and the photos reflect exactly how we felt."</p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-cover" data-alt="Bride laughing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5_idatIDVrp4z-YhsRXiWwhIJriR2mukc0tX8Q6-hCVnlnLSe3lAt3goyKg5OQl7dTIZPXTYqZVL_e1vLzE3IYI6h4uMEv_7jIfq4I_TMw5M9gtBFy5tnm9Qtv-GioV5k5IEGuYh2jIIP35WqkH6LdydTAFK6bHF4M-us5zstG1yXK0UIvp12E2IjYADbdDr3dMwsgyIEFQr0NWdZPaGLWeM3HzXm070ZeLER5JOCZnLvMzeRMrZeFi6vTl-vEOgyiTk3aQiYtw');"></div>
-<div>
-<p class="font-bold text-sm">Emily &amp; Michael</p>
-<p class="text-xs text-text-sub">Laurel Hall</p>
-</div>
-</div>
-</div>
-<div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
-<p class="italic text-text-sub mb-6">"The fast turnaround blew our minds. We had a sneak peek within 24 hours!"</p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-cover" data-alt="Groom smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJWTJMmtfKCJPzo9O5-cjydJRAhUNHtzXK12ipS_Ax-Ajl0pUrjbh75vqJ_PuFbC7CyPeQDgOx8ypBN6K61EKMx47L-OBDtnf25Kz2tMUYhDII40O5S6-79MMyS_uIyu-iTgl1fBntsHnJPqp1BM1P9zxdoQoIhvw4thnkd1KQYkaSMnbtICr5QHF_JDQyObKpobaHwbnv1QNE5yAO5lBgWYMsvpImWm3Um_HgevTfZASy-wlCEWYt32SVOb3G4i6afTLWSHN5xg');"></div>
-<div>
-<p class="font-bold text-sm">Jessica &amp; David</p>
-<p class="text-xs text-text-sub">Bottleworks Hotel</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-neutral-grey">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="text-4xl md:text-5xl font-bold mb-6">Wedding Photography That Feels Like Your Day — Not a Photoshoot</h2>
-<p class="text-text-sub text-lg font-display">We prioritize real moments over forced poses, ensuring you actually enjoy your celebration.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="text-center group">
-<div class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">schedule</span>
-</div>
-<h3 class="font-bold text-xl mb-3">Full-Day Coverage</h3>
-<p class="text-text-sub text-sm leading-relaxed font-display">No counting hours. We're there from the first makeup brush to the final dance.</p>
-</div>
-<div class="text-center group">
-<div class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">auto_stories</span>
-</div>
-<h3 class="font-bold text-xl mb-3">Natural Storytelling</h3>
-<p class="text-text-sub text-sm leading-relaxed font-display">Genuine emotions captured discretely. We focus on the story, not the staging.</p>
-</div>
-<div class="text-center group">
-<div class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">spa</span>
-</div>
-<h3 class="font-bold text-xl mb-3">Calm Presence</h3>
-<p class="text-text-sub text-sm leading-relaxed font-display">Our team acts as a grounding force, helping you stay present and relaxed all day.</p>
-</div>
-<div class="text-center group">
-<div class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">bolt</span>
-</div>
-<h3 class="font-bold text-xl mb-3">Fast Turnaround</h3>
-<p class="text-text-sub text-sm leading-relaxed font-display">24-hour sneak peeks and a full gallery within 4 weeks. No months of waiting.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light" id="portfolio">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
-<div class="max-w-xl">
-<h2 class="text-4xl md:text-5xl font-bold mb-4">Every wedding is different. Every story deserves to be told honestly.</h2>
-</div>
-<button class="text-primary font-bold hover:gap-2 flex items-center gap-1 transition-all font-display text-sm uppercase tracking-widest">View All Work <span class="material-symbols-outlined">arrow_forward</span></button>
-</div>
-<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Bride walking down the aisle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk-gshh53ZLM4IDOfVnGdvGGj5Bm4UJBk7gEd2mFVIS5GLUo-TDlu9MmmzQRGvX3T-KJ35T4VQq6gAstCSl2R7K1a5pEFDhKWfOOiZqqJzTFwv3trXk5OaP_lffco5Us0uC-08OWa96PC3pry-8DgdjPn4qJAS5SDhAzxHvSM_nZ_1bs3oiLV5ayatOt9NVZV_idtlKFVRG0O-HijbdFp1y8KlJ0ba2OGZwzRxeoEIP8ASEH7dC4Ecc7TACFqeCG0TIhE8m3Uceg"/>
-</div>
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Wedding rings close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNSTJ2tqYUzCcL7Y7tdGsXUEcgUEVB2NjfkEixzW9DTc2hH03wI6zHAXkQFBjV5ZElZNKJLCliOSfXu3RfXFjA2_dCQN8ZxoYaxuXJ8G1OnesUEmGVdZ4zDA6dGJ5iIzxyxAF3GlkB1tHRgrDhjvD0jd3cY1ODTl3sWuMg1KMzKA8oz3igFXfZkUVbrgavkFIRlHcdHXxpqN1JHNuqzdtqrv0M5aGvMO7LQUI4_ZRWMrl4kNTxyew_FP_rGzW38THt1EsbgbuTLg"/>
-</div>
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Couple kissing in a rainy city street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzOifOn_VSGqFNeGoL46Nn2LUUcxvDnhpx9VAgj-sx2Kpo1eHwZN3n4VE_8qauQDiszd5mVaSp4BHivT5FeZdd9C4_dQ6t6rVPCEI8liBAxIDuDiee5Rg2Gg6nWAOfeVsX5vjr6AvYUE8Kflu_PxHumsr36MI4hBSXymajk0KT6eVMHdVJ3T4amwnbNcuX5cdHyA49SI1i57RxSqH4bLMW8_E2DM7QT7fsYlN3KHZte7PDtkaFZdqqt-dxTEZw3uqLYhp_uvGGig"/>
-</div>
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Groom whispering to bride" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsWasxcLcpb1Hl98qAa02hTRrli8qdd594Oujj83R4VY_4Q1gvWFAP7aXcaZBZHKXx11-TmWjUrh3ZAKQXmZXmrrEr_Jq5kBF9oYFffj7JfI_ciF1qF2KEEyTYXkiQGzr_ckYDeeBs6J3s1Tdvyfn2pucxe-vswlA5_mm4VxPI2_BJL1i01LUQTj5FLmgkbDYbzTfP-oAEW00p2pvtoiOqbA8Y9uaLVb_91dQ6I0HbjF7xw2_0x8WqCekuM99_lWTxUX3AMj7qSA"/>
-</div>
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Wedding dance party wide shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfM-VE1GlforNCqGbSc-j1f0MoZ0JUrBGAk1Yik53RJ_E9_eOOyR42XhxntqkUIYeoK1mQbMS19dHZ7-okVIS54nT9u8yKawoPgqWVdMjonlm5FmRZNsjc799r1gXQ_uFzASZe2q5LIK9ayfp9m0If5yOXnAF33pKadPM4y1nxtPI4NPQDwpnPyD_qjU6TtxlXMtTebC3nqLW7vw2v9USSZ26uUsgyKSP8aHgzZmOCY6x3yKhSznIWPu6ShrFQftfB_4bO3v7vcg"/>
-</div>
-<div class="relative overflow-hidden rounded-xl bg-neutral-grey">
-<img class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer" data-alt="Bride emotional close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOAkIt0EdAxbzJs3NeJthIYYayRX5O6geCIsz9BWMYL6ER_ILFpbM0ANuKNZhIk0KiZLW2peW21ciVGWlUt8S-MaIVB-0I56YKKd_isgVlEnituffJZ_tCSdRO0RMtmC-z6tnDdDvdV3IxZ75kUuqRGI0a6x8G1Vuu31AIvCCw6rARQVNWNZxB1r6PIlv3pvXLTTn1my1Dv8xy8n5BJfkck1nebzX-7O-zGKLpLi_xp6TKKLtPN7SMjworHFrVuGLJxdH9YXBUuw"/>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-neutral-grey" id="packages">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl md:text-5xl font-bold mb-4">Simple, Transparent Wedding Photography Packages</h2>
-<p class="text-text-sub text-lg font-display">No hidden fees. Just beautiful memories.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col border border-transparent hover:border-primary transition-all">
-<h3 class="text-2xl font-bold mb-2">The Essentials</h3>
-<p class="text-text-sub text-sm mb-6 font-display">Perfect for intimate weddings.</p>
-<div class="text-5xl font-bold mb-8">$1,800 <span class="text-sm text-text-sub font-normal font-display">Starting</span></div>
-<ul class="space-y-4 mb-10 flex-grow font-display">
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> 6 Hours Coverage</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> 300+ Edited Images</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Online Gallery</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Print Rights</li>
-</ul>
-<button class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all font-display uppercase tracking-widest text-xs">Select Essentials</button>
-</div>
-<div class="bg-white p-10 rounded-2xl shadow-xl flex flex-col border-2 border-primary relative transform scale-105 z-10">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest font-display">Most Popular</div>
-<h3 class="text-2xl font-bold mb-2">The Signature</h3>
-<p class="text-text-sub text-sm mb-6 font-display">Full-day storytelling experience.</p>
-<div class="text-5xl font-bold mb-8 text-primary">$3,200 <span class="text-sm text-text-sub font-normal font-display">Average</span></div>
-<ul class="space-y-4 mb-10 flex-grow font-display">
-<li class="flex items-center gap-2 text-sm text-text-main font-semibold"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Full Day Coverage</li>
-<li class="flex items-center gap-2 text-sm text-text-main font-semibold"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Second Photographer</li>
-<li class="flex items-center gap-2 text-sm text-text-main font-semibold"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> 600+ Edited Images</li>
-<li class="flex items-center gap-2 text-sm text-text-main font-semibold"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Engagement Session</li>
-<li class="flex items-center gap-2 text-sm text-text-main font-semibold"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> 24hr Sneak Peeks</li>
-</ul>
-<button class="w-full py-4 rounded-lg bg-primary text-black font-bold hover:bg-primary/90 transition-all font-display uppercase tracking-widest text-xs">Check Availability</button>
-</div>
-<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col border border-transparent hover:border-primary transition-all">
-<h3 class="text-2xl font-bold mb-2">The Legacy</h3>
-<p class="text-text-sub text-sm mb-6 font-display">Ultimate luxury &amp; preservation.</p>
-<div class="text-5xl font-bold mb-8">$4,275 <span class="text-sm text-text-sub font-normal font-display">Elite</span></div>
-<ul class="space-y-4 mb-10 flex-grow font-display">
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Full Day Coverage</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Two Lead Photographers</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Handcrafted Photo Album</li>
-<li class="flex items-center gap-2 text-sm text-text-sub"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Engagement + Rehearsal</li>
-<li class="flex items-center gap-2 text-sm text-text-sub font-medium text-primary"><span class="material-symbols-outlined text-primary text-xl">check_circle</span> Photo + Video Bundle</li>
-</ul>
-<button class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all font-display uppercase tracking-widest text-xs">Inquire Legacy</button>
-</div>
-</div>
-<div class="mt-16 text-center">
-<button class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg font-display uppercase tracking-widest">Get Custom Pricing for Your Wedding</button>
-</div>
-</div>
-</section>
-<section class="relative py-32 overflow-hidden bg-black text-white">
-<div class="absolute inset-0 opacity-40">
-<div class="w-full h-full bg-cover bg-center" data-alt="Blurred cinematic video still of wedding couple" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdXOgPrljHVy_S9xabA2-nASdF5pk1dPTAaDoFLqlKzSloR6Uz5iEm0jLWfhmsIMvuJDquvHyi0jBLID9JayfKDX9eIrCBa5DS14H1uefty2OHog0PGbSBamteNs7xTXiu7oxFY_B4M89yQ7_DP_prSd2UiXqlvxwuna_jRFWdfVu_bXFQotDX_6iHSeJNCXUap2AQhdnUFt-3jwmEnoKSfdju4rkHzM5pzap2FUUN0PHhFgq0VWpAFCoXMjVo--g4l3lHE32wDw');"></div>
-</div>
-<div class="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
-<div class="size-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-8 border border-primary/40">
-<span class="material-symbols-outlined text-primary text-5xl">play_circle</span>
-</div>
-<h2 class="text-4xl md:text-6xl font-bold mb-6">Want to Relive Your Day on Film Too?</h2>
-<p class="text-xl text-white/80 max-w-2xl mx-auto mb-10 font-display">Save $500 when you bundle our cinematic videography with any photography package. One team, one vision, one seamless experience.</p>
-<button class="bg-white text-black px-10 py-4 rounded-lg font-bold hover:bg-primary transition-all font-display uppercase tracking-widest text-sm">Explore Video Bundles</button>
-</div>
-</section>
-<section class="py-24 bg-background-light" id="process">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="text-center mb-20">
-<h2 class="text-4xl md:text-5xl font-bold mb-4">The Journey to Your Story</h2>
-<p class="text-text-sub text-lg font-display">Stress-free from first click to final gallery.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-<div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-neutral-grey -z-10"></div>
-<div class="flex flex-col items-center text-center">
-<div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">1</div>
-<h3 class="font-bold text-xl mb-2">Check Date</h3>
-<p class="text-text-sub text-sm font-display">Fill out our quick inquiry form to see if we're free for your big day.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">2</div>
-<h3 class="font-bold text-xl mb-2">Consultation</h3>
-<p class="text-text-sub text-sm font-display">We'll grab coffee or hop on a call to talk through your vision and vibes.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">3</div>
-<h3 class="font-bold text-xl mb-2">The Wedding</h3>
-<p class="text-text-sub text-sm font-display">Relax and enjoy. We'll be there to capture every laugh and tear discreetly.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">4</div>
-<h3 class="font-bold text-xl mb-2">Preservation</h3>
-<p class="text-text-sub text-sm font-display">Receive your full, high-res gallery and custom album to keep forever.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-neutral-grey" id="faq">
-<div class="max-w-3xl mx-auto px-6">
-<h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-<div class="space-y-4">
-<details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
-<summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
-                    How far in advance should we book?
-                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
-                    Most couples book 12–18 months in advance, especially for popular fall and spring Saturdays in Indianapolis. However, it never hurts to check if your date is still open!
-                </div>
-</details>
-<details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
-<summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
-                    Do you travel outside of Indianapolis?
-                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
-                    Absolutely! While we love our Indy venues like Bottleworks and Laurel Hall, we travel worldwide. We have special destination packages for weddings outside of Central Indiana.
-                </div>
-</details>
-<details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
-<summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
-                    How long until we see our photos?
-                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
-                    You'll receive a curated set of "Sneak Peek" photos within 24 hours of your wedding. Your full, final gallery will be delivered via a private online link within 4–6 weeks.
-                </div>
-</details>
-<details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
-<summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
-                    Can we customize a package?
-                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
-                    Yes! We understand every wedding is unique. If our standard packages don't quite fit your needs, we're happy to create a custom proposal just for you.
-                </div>
-</details>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light">
-<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-<div>
-<h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">Ready to tell your story? Let's check your date.</h2>
-<p class="text-xl text-text-sub mb-10 font-display">We only take a limited number of weddings per year to ensure every couple gets our full focus and energy.</p>
-<div class="flex items-center gap-4 p-4 bg-neutral-grey rounded-xl border-l-4 border-primary">
-<span class="material-symbols-outlined text-primary text-3xl">info</span>
-<p class="text-sm font-medium font-display">Currently booking for 2024 &amp; 2025. Limited weekends remain for this fall.</p>
-</div>
-</div>
-<div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-neutral-grey">
-<div class="space-y-6">
-<div>
-<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest text-text-sub mb-4 font-display">
-<span>Step 1 of 3</span>
-<span class="text-primary">Date &amp; Location</span>
-</div>
-<div class="w-full h-1 bg-neutral-grey rounded-full">
-<div class="w-1/3 h-full bg-primary rounded-full"></div>
-</div>
-</div>
-<div class="space-y-4 font-display">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="space-y-2">
-<label class="text-[10px] font-bold text-text-main uppercase tracking-widest">Wedding Date</label>
-<input class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary" type="date"/>
-</div>
-<div class="space-y-2">
-<label class="text-[10px] font-bold text-text-main uppercase tracking-widest">Venue / City</label>
-<input class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary" placeholder="e.g. Indianapolis, IN" type="text"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-[10px] font-bold text-text-main uppercase tracking-widest">Service Needed</label>
-<select class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary">
-<option>Photography Only</option>
-<option>Photo + Video Bundle (Save $500)</option>
-<option>Videography Only</option>
-<option>Not sure yet</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-[10px] font-bold text-text-main uppercase tracking-widest">Your Name</label>
-<input class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary" placeholder="First &amp; Last Name" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-[10px] font-bold text-text-main uppercase tracking-widest">Email Address</label>
-<input class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary" placeholder="hello@yourwedding.com" type="email"/>
-</div>
-</div>
-<button class="w-full bg-primary text-black py-4 rounded-xl font-bold text-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2 font-display uppercase tracking-widest text-sm">
-                    Next: Availability &amp; Pricing <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<p class="text-center text-[10px] text-text-sub font-display">No spam. We typically reply within 12-24 hours.</p>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-black text-white py-16">
-<div class="max-w-[1200px] mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
-<div>
-<div class="flex items-center gap-2 mb-6">
-<div class="size-6 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
-</svg>
-</div>
-<span class="text-lg font-bold">Mack Media</span>
-</div>
-<p class="text-white/60 max-w-xs text-sm leading-relaxed mb-6 font-display">Cinematic, story-driven wedding photography and videography based in Indianapolis, Indiana.</p>
-<div class="flex gap-4">
-<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all" href="#"><span class="material-symbols-outlined text-xl">camera_alt</span></a>
-<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all" href="#"><span class="material-symbols-outlined text-xl">videocam</span></a>
-<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all" href="#"><span class="material-symbols-outlined text-xl">mail</span></a>
-</div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
-<div>
-<h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">Quick Links</h4>
-<ul class="space-y-4 text-white/60 text-sm font-display">
-<li><a class="hover:text-white" href="#portfolio">Portfolio</a></li>
-<li><a class="hover:text-white" href="#packages">Packages</a></li>
-<li><a class="hover:text-white" href="#process">Our Process</a></li>
-<li><a class="hover:text-white" href="#faq">FAQs</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">Venues We Love</h4>
-<ul class="space-y-4 text-white/60 text-sm font-display">
-<li>The Conrad</li>
-<li>Laurel Hall</li>
-<li>Bottleworks Hotel</li>
-<li>The Alexander</li>
-</ul>
-</div>
-<div class="col-span-2 md:col-span-1">
-<h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">Contact</h4>
-<ul class="space-y-4 text-white/60 text-sm font-display">
-<li>Indianapolis, IN</li>
-<li>hello@mackmedia.co</li>
-<li>(317) 555-0123</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-white/40 text-[10px] font-display uppercase tracking-widest">
-<p>© 2024 Mack Media. All Rights Reserved.</p>
-<div class="flex gap-6">
-<a class="hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-white" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-</body></html>
+    <title>Mack Media | Indianapolis Wedding Photographer</title>
+    <meta
+      name="description"
+      content="Indianapolis wedding photographer for timeless, story-driven weddings. Photography packages start at $1,800. Photo + video bundles start at $4,275. Check date availability."
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#c6a15d",
+              "background-light": "#ffffff",
+              "background-dark": "#111111",
+              "neutral-grey": "#F7F7F7",
+              "text-main": "#111111",
+              "text-sub": "#6B6B6B",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      /* Smooth scroll for anchor jumps */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Make <summary> look clean */
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      /* Better focus rings sitewide */
+      :focus-visible {
+        outline: 2px solid rgba(198, 161, 93, 0.9);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background-light text-text-main font-display">
+    <!-- Header -->
+    <header
+      class="fixed top-0 z-50 w-full bg-black border-b border-white/10 px-6 lg:px-20 py-4 flex items-center justify-between"
+    >
+      <div class="flex items-center gap-2">
+        <div class="size-8 text-primary" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <span class="text-white text-xl font-bold tracking-tight">Mack Media</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-10">
+        <a
+          class="text-white/80 hover:text-primary text-sm font-medium transition-colors"
+          href="#portfolio"
+          >Portfolio</a
+        >
+        <a
+          class="text-white/80 hover:text-primary text-sm font-medium transition-colors"
+          href="#packages"
+          >Packages</a
+        >
+        <a
+          class="text-white/80 hover:text-primary text-sm font-medium transition-colors"
+          href="#process"
+          >Process</a
+        >
+        <a
+          class="text-white/80 hover:text-primary text-sm font-medium transition-colors"
+          href="#faq"
+          >FAQ</a
+        >
+        <button
+          type="button"
+          data-scroll="availability"
+          class="bg-primary text-black px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all"
+        >
+          Check Availability
+        </button>
+      </nav>
+
+      <!-- Mobile header CTA -->
+      <div class="md:hidden">
+        <button
+          type="button"
+          data-scroll="availability"
+          class="bg-primary text-black px-4 py-2 rounded-lg text-xs font-bold hover:bg-primary/90 transition-all"
+        >
+          Check Date
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-black/45 z-10"></div>
+        <div
+          class="w-full h-full bg-cover bg-center"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPmoeLUfCFVGNgTJMAJOn4v7X0eX6vhY6-EpJYAkUIht6T7dRQo7c5jVrVla-D1wuHsWGAj-vm3d9DkHSBQoeIOTfasd426XpxzGyeTtLyflk7LSu-W31B67KCtPIWHOcGlFlAAAIvn0v6z6Gt3wtsb0IvBOlKYq6-Dzo5Oec7Zw3x2XU6-Uplo0Gw3xhqYo-yQW25GGp3TPK_uOA4lHs096OvEWOOxBOqJglM1y95bzXEDyiwsNn9qT9-GaqRnU9xo7irAVpofw");'
+          role="img"
+          aria-label="Cinematic wedding couple laughing in golden hour"
+        ></div>
+      </div>
+
+      <div class="relative z-20 max-w-5xl px-6 text-center text-white">
+        <p class="text-white/80 text-xs md:text-sm uppercase tracking-[0.25em] font-bold mb-4">
+          Indianapolis Wedding Photography • Central Indiana
+        </p>
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6">
+          Indianapolis Wedding Photographer for
+          <span class="text-primary italic">Timeless</span>, Story-Driven Weddings
+        </h1>
+
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+          Candid, cinematic wedding photography that captures how your day <span class="italic">felt</span> — not
+          just how it looked.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="w-full sm:w-auto bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-black/20"
+          >
+            Check Your Date Availability
+          </button>
+
+          <a
+            class="text-white underline underline-offset-8 font-semibold hover:text-primary transition-colors py-2 px-4"
+            href="#packages"
+          >
+            See Packages &amp; Starting Prices
+          </a>
+        </div>
+
+        <div class="mt-6 text-white/80 text-sm font-display">
+          <span class="font-semibold text-white">Photography packages start at $1,800</span>
+          <span class="mx-2">•</span>
+          <span class="font-semibold text-white">Photo + Video bundles start at $4,275</span>
+        </div>
+
+        <div class="mt-6 text-[11px] text-white/70 font-display">
+          Takes 30 seconds • No obligation • Typical reply within 12–24 hours
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Social Proof -->
+    <section class="py-24 bg-background-light">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-text-sub uppercase tracking-[0.2em] text-xs font-bold mb-4 font-display">
+            Trusted By Local Couples
+          </h2>
+          <p class="text-4xl md:text-5xl font-bold text-text-main">
+            Trusted by Indianapolis Couples Who Care About Their Story
+          </p>
+
+          <div class="flex items-center justify-center gap-4 mt-8">
+            <div class="flex text-primary" aria-hidden="true">
+              <span class="material-symbols-outlined fill-[1]">star</span>
+              <span class="material-symbols-outlined fill-[1]">star</span>
+              <span class="material-symbols-outlined fill-[1]">star</span>
+              <span class="material-symbols-outlined fill-[1]">star</span>
+              <span class="material-symbols-outlined fill-[1]">star</span>
+            </div>
+            <span class="font-bold text-lg">5.0 Rating</span>
+            <span class="text-text-sub font-medium">120+ Reviews</span>
+          </div>
+
+          <div class="mt-10">
+            <button
+              type="button"
+              data-scroll="availability"
+              class="bg-primary text-black px-8 py-3 rounded-lg font-bold hover:bg-primary/90 transition-all"
+            >
+              Check Availability
+            </button>
+            <p class="mt-3 text-[11px] text-text-sub font-display">
+              No spam. Just availability + pricing — fast.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
+            <p class="italic text-text-sub mb-6">
+              "Mack Media captured moments we didn't even know were happening. The storytelling is just incredible."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 rounded-full bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtRpfRMM39pPw_wMo-Is1OsuFo2Zo2gp0YLcpXBZX5m7Y5qi10qoE6STqS_yhgY0AlTQXrXZ5BQTMIz5nvQ4qnSAC4pUJAK9vRDrGROc2KhVmh1rb5JdrCs0oA2aGwcdahG0PNis8b55xDYn7qNABuQ2y7vQXo4kLuoLLEgND2AZRJVlZH1A4qB2nJC_g8wS28iiupU7JYZFVeb1EAVrXct1SeaoNndO0OkW2CQM_tvH6RxZj1d5u3CLfLLDzky6torD4MO0LMtA');"
+                role="img"
+                aria-label="Happy couple smiling"
+              ></div>
+              <div>
+                <p class="font-bold text-sm">Sarah &amp; James</p>
+                <p class="text-xs text-text-sub">Downtown Indy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
+            <p class="italic text-text-sub mb-6">
+              "A calm presence on a hectic day. We felt so comfortable, and the photos reflect exactly how we felt."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 rounded-full bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5_idatIDVrp4z-YhsRXiWwhIJriR2mukc0tX8Q6-hCVnlnLSe3lAt3goyKg5OQl7dTIZPXTYqZVL_e1vLzE3IYI6h4uMEv_7jIfq4I_TMw5M9gtBFy5tnm9Qtv-GioV5k5IEGuYh2jIIP35WqkH6LdydTAFK6bHF4M-us5zstG1yXK0UIvp12E2IjYADbdDr3dMwsgyIEFQr0NWdZPaGLWeM3HzXm070ZeLER5JOCZnLvMzeRMrZeFi6vTl-vEOgyiTk3aQiYtw');"
+                role="img"
+                aria-label="Bride laughing"
+              ></div>
+              <div>
+                <p class="font-bold text-sm">Emily &amp; Michael</p>
+                <p class="text-xs text-text-sub">Northside Indy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8 border border-neutral-grey rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">
+            <p class="italic text-text-sub mb-6">
+              "The turnaround was unreal. We got sneak peeks fast — and the full gallery was worth the wait."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 rounded-full bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJWTJMmtfKCJPzo9O5-cjydJRAhUNHtzXK12ipS_Ax-Ajl0pUrjbh75vqJ_PuFbC7CyPeQDgOx8ypBN6K61EKMx47L-OBDtnf25Kz2tMUYhDII40O5S6-79MMyS_uIyu-iTgl1fBntsHnJPqp1BM1P9zxdoQoIhvw4thnkd1KQYkaSMnbtICr5QHF_JDQyObKpobaHwbnv1QNE5yAO5lBgWYMsvpImWm3Um_HgevTfZASy-wlCEWYt32SVOb3G4i6afTLWSHN5xg');"
+                role="img"
+                aria-label="Groom smiling"
+              ></div>
+              <div>
+                <p class="font-bold text-sm">Jessica &amp; David</p>
+                <p class="text-xs text-text-sub">Fountain Square</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiators -->
+    <section class="py-24 bg-neutral-grey">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Wedding Photography That Feels Like Your Day — Not a Photoshoot
+          </h2>
+          <p class="text-text-sub text-lg font-display">
+            Real moments over forced poses — so you actually enjoy your celebration.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center group">
+            <div
+              class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors"
+            >
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">schedule</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Full-Day Coverage</h3>
+            <p class="text-text-sub text-sm leading-relaxed font-display">
+              The moments you’ll regret missing happen between the “big” moments — we’re there for them.
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors"
+            >
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">auto_stories</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Natural Storytelling</h3>
+            <p class="text-text-sub text-sm leading-relaxed font-display">
+              Candid, honest, and timeless — guided when needed, never overly posed.
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors"
+            >
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">spa</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Calm, Pro Presence</h3>
+            <p class="text-text-sub text-sm leading-relaxed font-display">
+              Reliable communication, a smooth timeline flow, and a calming energy on a fast-moving day.
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors"
+            >
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">bolt</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Fast Turnaround</h3>
+            <p class="text-text-sub text-sm leading-relaxed font-display">
+              Sneak peeks quickly — full gallery delivered on a clear timeline, no months of wondering.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-14 text-center">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg"
+          >
+            Check Your Date Availability
+          </button>
+          <p class="mt-3 text-[11px] text-text-sub font-display">Takes 30 seconds • No obligation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="py-24 bg-background-light" id="portfolio">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              Every wedding is different. Every story deserves to be told honestly.
+            </h2>
+            <p class="text-text-sub font-display">
+              If you searched “wedding photographer near me” and landed here — you’re in the right place.
+              We serve Indianapolis and surrounding areas with story-first wedding photography.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            data-scroll="availability"
+            class="text-primary font-bold hover:gap-2 flex items-center gap-1 transition-all font-display text-sm uppercase tracking-widest"
+          >
+            Check Availability <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Bride walking down the aisle"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk-gshh53ZLM4IDOfVnGdvGGj5Bm4UJBk7gEd2mFVIS5GLUo-TDlu9MmmzQRGvX3T-KJ35T4VQq6gAstCSl2R7K1a5pEFDhKWfOOiZqqJzTFwv3trXk5OaP_lffco5Us0uC-08OWa96PC3pry-8DgdjPn4qJAS5SDhAzxHvSM_nZ_1bs3oiLV5ayatOt9NVZV_idtlKFVRG0O-HijbdFp1y8KlJ0ba2OGZwzRxeoEIP8ASEH7dC4Ecc7TACFqeCG0TIhE8m3Uceg"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Wedding rings close up"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNSTJ2tqYUzCcL7Y7tdGsXUEcgUEVB2NjfkEixzW9DTc2hH03wI6zHAXkQFBjV5ZElZNKJLCliOSfXu3RfXFjA2_dCQN8ZxoYaxuXJ8G1OnesUEmGVdZ4zDA6dGJ5iIzxyxAF3GlkB1tHRgrDhjvD0jd3cY1ODTl3sWuMg1KMzKA8oz3igFXfZkUVbrgavkFIRlHcdHXxpqN1JHNuqzdtqrv0M5aGvMO7LQUI4_ZRWMrl4kNTxyew_FP_rGzW38THt1EsbgbuTLg"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Couple kissing in a rainy city street"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzOifOn_VSGqFNeGoL46Nn2LUUcxvDnhpx9VAgj-sx2Kpo1eHwZN3n4VE_8qauQDiszd5mVaSp4BHivT5FeZdd9C4_dQ6t6rVPCEI8liBAxIDuDiee5Rg2Gg6nWAOfeVsX5vjr6AvYUE8Kflu_PxHumsr36MI4hBSXymajk0KT6eVMHdVJ3T4amwnbNcuX5cdHyA49SI1i57RxSqH4bLMW8_E2DM7QT7fsYlN3KHZte7PDtkaFZdqqt-dxTEZw3uqLYhp_uvGGig"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Groom whispering to bride"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsWasxcLcpb1Hl98qAa02hTRrli8qdd594Oujj83R4VY_4Q1gvWFAP7aXcaZBZHKXx11-TmWjUrh3ZAKQXmZXmrrEr_Jq5kBF9oYFffj7JfI_ciF1qF2KEEyTYXkiQGzr_ckYDeeBs6J3s1Tdvyfn2pucxe-vswlA5_mm4VxPI2_BJL1i01LUQTj5FLmgkbDYbzTfP-oAEW00p2pvtoiOqbA8Y9uaLVb_91dQ6I0HbjF7xw2_0x8WqCekuM99_lWTxUX3AMj7qSA"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Wedding dance party wide shot"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfM-VE1GlforNCqGbSc-j1f0MoZ0JUrBGAk1Yik53RJ_E9_eOOyR42XhxntqkUIYeoK1mQbMS19dHZ7-okVIS54nT9u8yKawoPgqWVdMjonlm5FmRZNsjc799r1gXQ_uFzASZe2q5LIK9ayfp9m0If5yOXnAF33pKadPM4y1nxtPI4NPQDwpnPyD_qjU6TtxlXMtTebC3nqLW7vw2v9USSZ26uUsgyKSP8aHgzZmOCY6x3yKhSznIWPu6ShrFQftfB_4bO3v7vcg"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-xl bg-neutral-grey">
+            <img
+              class="w-full hover:scale-105 transition-transform duration-500 cursor-pointer"
+              alt="Bride emotional close up"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOAkIt0EdAxbzJs3NeJthIYYayRX5O6geCIsz9BWMYL6ER_ILFpbM0ANuKNZhIk0KiZLW2peW21ciVGWlUt8S-MaIVB-0I56YKKd_isgVlEnituffJZ_tCSdRO0RMtmC-z6tnDdDvdV3IxZ75kUuqRGI0a6x8G1Vuu31AIvCCw6rARQVNWNZxB1r6PIlv3pvXLTTn1my1Dv8xy8n5BJfkck1nebzX-7O-zGKLpLi_xp6TKKLtPN7SMjworHFrVuGLJxdH9YXBUuw"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="mt-14 text-center">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg"
+          >
+            Get Custom Pricing for Your Wedding
+          </button>
+          <p class="mt-3 text-[11px] text-text-sub font-display">
+            We’ll confirm availability and send pricing details within 12–24 hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="py-24 bg-neutral-grey" id="packages">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Simple, Transparent Wedding Photography Packages</h2>
+          <p class="text-text-sub text-lg font-display">
+            Clear starting points — with custom options for your day.
+          </p>
+          <p class="mt-4 text-sm text-text-sub font-display">
+            <span class="font-semibold text-text-main">Photography starts at $1,800</span>
+            <span class="mx-2">•</span>
+            <span class="font-semibold text-text-main">Photo + Video bundles start at $4,275</span>
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Essentials -->
+          <div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col border border-transparent hover:border-primary transition-all">
+            <h3 class="text-2xl font-bold mb-2">Essentials</h3>
+            <p class="text-text-sub text-sm mb-6 font-display">Best for intimate weddings and shorter timelines.</p>
+            <div class="text-5xl font-bold mb-8">$1,800 <span class="text-sm text-text-sub font-normal font-display">Starting</span></div>
+            <ul class="space-y-4 mb-10 flex-grow font-display">
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Coverage options for smaller timelines
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Professionally edited, high-res images
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Online gallery for easy sharing
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Print rights included
+              </li>
+            </ul>
+            <button
+              type="button"
+              data-scroll="availability"
+              class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-black transition-all font-display uppercase tracking-widest text-xs"
+            >
+              Check Availability
+            </button>
+          </div>
+
+          <!-- Signature -->
+          <div class="bg-white p-10 rounded-2xl shadow-xl flex flex-col border-2 border-primary relative transform md:scale-105 z-10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest font-display">
+              Most Popular
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Signature</h3>
+            <p class="text-text-sub text-sm mb-6 font-display">Full-day storytelling for couples who don’t want missed moments.</p>
+            <div class="text-5xl font-bold mb-8 text-primary">
+              $3,200 <span class="text-sm text-text-sub font-normal font-display">Average</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow font-display">
+              <li class="flex items-center gap-2 text-sm text-text-main font-semibold">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Full-day or extended coverage options
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-main font-semibold">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Second shooter options available
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-main font-semibold">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Clean, timeless editing
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-main font-semibold">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Sneak peeks + clear delivery timeline
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-main font-semibold">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Add-ons available (engagement, albums, etc.)
+              </li>
+            </ul>
+            <button
+              type="button"
+              data-scroll="availability"
+              class="w-full py-4 rounded-lg bg-primary text-black font-bold hover:bg-primary/90 transition-all font-display uppercase tracking-widest text-xs"
+            >
+              Check Your Date
+            </button>
+          </div>
+
+          <!-- Bundle -->
+          <div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col border border-transparent hover:border-primary transition-all">
+            <h3 class="text-2xl font-bold mb-2">Photo + Video Bundle</h3>
+            <p class="text-text-sub text-sm mb-6 font-display">One team, one vision — a seamless experience.</p>
+            <div class="text-5xl font-bold mb-8">$4,275 <span class="text-sm text-text-sub font-normal font-display">Starting</span></div>
+            <ul class="space-y-4 mb-10 flex-grow font-display">
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Photography + cinematic videography
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Coordinated coverage for smoother timelines
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Bundle savings built in
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Ideal for vows, speeches, and emotion you want to relive
+              </li>
+              <li class="flex items-center gap-2 text-sm text-text-sub font-medium text-primary">
+                <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Best value for preserving your full story
+              </li>
+            </ul>
+            <button
+              type="button"
+              data-scroll="availability"
+              class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-black transition-all font-display uppercase tracking-widest text-xs"
+            >
+              Ask About Bundles
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg font-display uppercase tracking-widest"
+          >
+            Get Custom Pricing for Your Wedding
+          </button>
+          <p class="mt-3 text-[11px] text-text-sub font-display">
+            We’ll confirm availability and send pricing options within 12–24 hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videography cross-sell (subtle) -->
+    <section class="relative py-28 overflow-hidden bg-black text-white">
+      <div class="absolute inset-0 opacity-35">
+        <div
+          class="w-full h-full bg-cover bg-center"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdXOgPrljHVy_S9xabA2-nASdF5pk1dPTAaDoFLqlKzSloR6Uz5iEm0jLWfhmsIMvuJDquvHyi0jBLID9JayfKDX9eIrCBa5DS14H1uefty2OHog0PGbSBamteNs7xTXiu7oxFY_B4M89yQ7_DP_prSd2UiXqlvxwuna_jRFWdfVu_bXFQotDX_6iHSeJNCXUap2AQhdnUFt-3jwmEnoKSfdju4rkHzM5pzap2FUUN0PHhFgq0VWpAFCoXMjVo--g4l3lHE32wDw');"
+          role="img"
+          aria-label="Cinematic wedding video still"
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
+        <div class="size-20 bg-primary/15 rounded-full flex items-center justify-center mx-auto mb-8 border border-primary/35">
+          <span class="material-symbols-outlined text-primary text-5xl">play_circle</span>
+        </div>
+
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Want to Relive Your Day on Film Too?</h2>
+        <p class="text-xl text-white/80 max-w-2xl mx-auto mb-10 font-display">
+          Many couples add cinematic videography to preserve vows, speeches, and the emotion photos can’t fully capture.
+          Bundles start at <span class="text-white font-semibold">$4,275</span>.
+        </p>
+
+        <button
+          type="button"
+          data-scroll="availability"
+          class="bg-primary text-black px-10 py-4 rounded-lg font-bold hover:bg-primary/90 transition-all font-display uppercase tracking-widest text-sm"
+        >
+          Add Videography to Your Day
+        </button>
+
+        <p class="mt-4 text-[11px] text-white/70 font-display">
+          One team • One timeline • One seamless experience
+        </p>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-24 bg-background-light" id="process">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">What Happens After You Reach Out</h2>
+          <p class="text-text-sub text-lg font-display">Stress-free from first click to final delivery.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+          <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-neutral-grey -z-10"></div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">1</div>
+            <h3 class="font-bold text-xl mb-2">Check Date</h3>
+            <p class="text-text-sub text-sm font-display">
+              Submit the quick form — we’ll confirm availability and your best next step.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">2</div>
+            <h3 class="font-bold text-xl mb-2">Pricing Options</h3>
+            <p class="text-text-sub text-sm font-display">
+              You’ll receive clear starting prices + package options that match your timeline.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">3</div>
+            <h3 class="font-bold text-xl mb-2">Quick Consult</h3>
+            <p class="text-text-sub text-sm font-display">
+              Optional call to confirm vibes, style, and expectations — fast and easy.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="size-16 rounded-full bg-primary text-black font-bold text-2xl flex items-center justify-center mb-6 font-serif">4</div>
+            <h3 class="font-bold text-xl mb-2">Wedding Day</h3>
+            <p class="text-text-sub text-sm font-display">
+              You stay present — we capture the story, the emotion, and the moments you’ll relive forever.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg"
+          >
+            Check Your Date Availability
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-neutral-grey" id="faq">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
+            <summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
+              How far in advance should we book?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
+              Most Indianapolis couples book 6–12+ months in advance for popular Saturdays. If you’re searching now, it’s the perfect time to check if your date is still open.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
+            <summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
+              Do you travel outside of Indianapolis?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
+              Yes — we serve Central Indiana and beyond. Share your venue/city in the form and we’ll confirm travel details.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
+            <summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
+              How long until we see our photos?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
+              We’ll set expectations upfront. Many couples receive sneak peeks quickly, with the full gallery delivered on a clear timeline discussed before booking.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl overflow-hidden border border-neutral-grey group">
+            <summary class="p-6 flex items-center justify-between cursor-pointer list-none font-bold text-xl font-serif">
+              Can we customize a package?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-text-sub leading-relaxed font-display text-sm">
+              Absolutely. Tell us your date, location, and what you want most — we’ll recommend the best fit and options.
+            </div>
+          </details>
+        </div>
+
+        <div class="mt-14 text-center">
+          <button
+            type="button"
+            data-scroll="availability"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg"
+          >
+            Get Custom Pricing
+          </button>
+          <p class="mt-3 text-[11px] text-text-sub font-display">No obligation • Reply in 12–24 hours</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Availability / Form -->
+    <section class="py-24 bg-background-light" id="availability">
+      <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div>
+          <h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+            Let’s Check Your Wedding Date
+          </h2>
+
+          <p class="text-xl text-text-sub mb-10 font-display">
+            Share a few details and we’ll confirm availability and send pricing options. No pressure — just clear next steps.
+          </p>
+
+          <div class="flex items-center gap-4 p-4 bg-neutral-grey rounded-xl border-l-4 border-primary">
+            <span class="material-symbols-outlined text-primary text-3xl">info</span>
+            <p class="text-sm font-medium font-display">
+              Currently booking for <span class="font-semibold">2026 &amp; 2027</span>. Prime Saturdays fill quickly.
+            </p>
+          </div>
+
+          <div class="mt-8 text-sm text-text-sub font-display">
+            <p><span class="font-semibold text-text-main">Starting prices:</span> $1,800 photography • $4,275 photo + video</p>
+            <p class="mt-2 text-[11px]">If you’re not sure which option fits, choose “Not sure yet” — we’ll help.</p>
+          </div>
+        </div>
+
+        <!-- Netlify multi-step form -->
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-neutral-grey">
+          <!-- Netlify requires a real <form> with a name + hidden form-name -->
+          <form
+            id="leadForm"
+            name="mack-media-availability"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="mack-media-availability" />
+            <p class="hidden">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <!-- step indicator -->
+            <div>
+              <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest text-text-sub mb-4 font-display">
+                <span id="stepLabel">Step 1 of 3</span>
+                <span class="text-primary" id="stepTitle">Date &amp; Location</span>
+              </div>
+              <div class="w-full h-1 bg-neutral-grey rounded-full">
+                <div id="stepBar" class="w-1/3 h-full bg-primary rounded-full transition-all"></div>
+              </div>
+            </div>
+
+            <!-- STEP 1 -->
+            <div id="step1" class="space-y-4 font-display">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="weddingDate">Wedding Date</label>
+                  <input
+                    id="weddingDate"
+                    name="wedding_date"
+                    class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                    type="date"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="venueCity">Venue / City</label>
+                  <input
+                    id="venueCity"
+                    name="venue_city"
+                    class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                    placeholder="e.g. Indianapolis, IN"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="serviceNeeded">Service Needed</label>
+                <select
+                  id="serviceNeeded"
+                  name="service_needed"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                  required
+                >
+                  <option value="Photography Only">Photography Only</option>
+                  <option value="Photo + Video Bundle">Photo + Video Bundle (Starting at $4,275)</option>
+                  <option value="Videography Only">Videography Only</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+
+              <button
+                type="button"
+                id="next1"
+                class="w-full bg-primary text-black py-4 rounded-xl font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 font-display uppercase tracking-widest text-sm"
+              >
+                Next: Your Info <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+
+              <p class="text-center text-[10px] text-text-sub font-display">
+                No spam. We typically reply within 12–24 hours.
+              </p>
+            </div>
+
+            <!-- STEP 2 -->
+            <div id="step2" class="space-y-4 font-display hidden">
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="fullName">Your Name</label>
+                <input
+                  id="fullName"
+                  name="name"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                  placeholder="First & Last Name"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="email">Email Address</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                  placeholder="you@example.com"
+                  type="email"
+                  required
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="phone">Phone (optional)</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                  placeholder="(317) 555-0123"
+                  type="tel"
+                  inputmode="tel"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+                <button
+                  type="button"
+                  id="back2"
+                  class="w-full py-3 rounded-xl border border-neutral-grey text-text-main font-bold hover:border-primary transition-all"
+                >
+                  Back
+                </button>
+                <button
+                  type="button"
+                  id="next2"
+                  class="w-full bg-primary text-black py-3 rounded-xl font-bold hover:bg-primary/90 transition-all"
+                >
+                  Next: Final Details
+                </button>
+              </div>
+
+              <p class="text-center text-[10px] text-text-sub font-display">
+                We’ll only use this to respond about availability & pricing.
+              </p>
+            </div>
+
+            <!-- STEP 3 -->
+            <div id="step3" class="space-y-4 font-display hidden">
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="budget">Budget Range (optional)</label>
+                <select
+                  id="budget"
+                  name="budget_range"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                >
+                  <option value="">Select (optional)</option>
+                  <option>$1,800–$2,500</option>
+                  <option>$2,500–$3,500</option>
+                  <option>$3,500–$4,500</option>
+                  <option>$4,500+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="notes">Anything we should know? (optional)</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+                  rows="4"
+                  placeholder="Venue, vibe, timeline, must-have shots, etc."
+                ></textarea>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+                <button
+                  type="button"
+                  id="back3"
+                  class="w-full py-3 rounded-xl border border-neutral-grey text-text-main font-bold hover:border-primary transition-all"
+                >
+                  Back
+                </button>
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="w-full bg-primary text-black py-3 rounded-xl font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
+                >
+                  Submit &amp; Check Availability <span class="material-symbols-outlined">send</span>
+                </button>
+              </div>
+
+              <p class="text-center text-[10px] text-text-sub font-display">
+                By submitting, you’re requesting availability & pricing. No spam.
+              </p>
+            </div>
+
+            <!-- Success message (shown after redirect-free submit) -->
+            <div id="successBox" class="hidden">
+              <div class="p-5 rounded-xl bg-neutral-grey border border-neutral-grey">
+                <p class="font-bold text-lg">Request received ✅</p>
+                <p class="text-text-sub text-sm mt-2 font-display">
+                  We’ll confirm availability and send pricing options within 12–24 hours.
+                </p>
+              </div>
+            </div>
+
+            <!-- Error message -->
+            <div id="errorBox" class="hidden">
+              <div class="p-5 rounded-xl bg-red-50 border border-red-200">
+                <p class="font-bold text-lg text-red-800">Something went wrong</p>
+                <p class="text-red-700 text-sm mt-2 font-display">
+                  Please try again in a moment, or email <span class="font-semibold">hello@mackmedia.co</span>.
+                </p>
+              </div>
+            </div>
+          </form>
+
+          <!-- OPTIONAL: Swap to GHL embed later
+            Replace the entire <form> above with your GHL iframe.
+            Keep the section ID="availability" so CTAs still work.
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+          <div>
+            <div class="flex items-center gap-2 mb-6">
+              <div class="size-6 text-primary" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-lg font-bold">Mack Media</span>
+            </div>
+
+            <p class="text-white/60 max-w-xs text-sm leading-relaxed mb-6 font-display">
+              Cinematic, story-driven wedding photography and videography based in Indianapolis, Indiana.
+            </p>
+
+            <div class="flex gap-4">
+              <a
+                class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all"
+                href="#availability"
+                aria-label="Check availability"
+              >
+                <span class="material-symbols-outlined text-xl">event_available</span>
+              </a>
+              <a
+                class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all"
+                href="mailto:hello@mackmedia.co"
+                aria-label="Email Mack Media"
+              >
+                <span class="material-symbols-outlined text-xl">mail</span>
+              </a>
+              <a
+                class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all"
+                href="tel:+13175550123"
+                aria-label="Call Mack Media"
+              >
+                <span class="material-symbols-outlined text-xl">call</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+            <div>
+              <h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">
+                Quick Links
+              </h4>
+              <ul class="space-y-4 text-white/60 text-sm font-display">
+                <li><a class="hover:text-white" href="#portfolio">Portfolio</a></li>
+                <li><a class="hover:text-white" href="#packages">Packages</a></li>
+                <li><a class="hover:text-white" href="#process">Our Process</a></li>
+                <li><a class="hover:text-white" href="#faq">FAQs</a></li>
+                <li><a class="hover:text-white" href="#availability">Check Availability</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">
+                Service Area
+              </h4>
+              <ul class="space-y-4 text-white/60 text-sm font-display">
+                <li>Indianapolis</li>
+                <li>Carmel</li>
+                <li>Fishers</li>
+                <li>Greenwood</li>
+                <li>Central Indiana</li>
+              </ul>
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <h4 class="font-bold mb-6 text-[10px] uppercase tracking-widest text-primary font-display">Contact</h4>
+              <ul class="space-y-4 text-white/60 text-sm font-display">
+                <li>Indianapolis, IN</li>
+                <li><a class="hover:text-white" href="mailto:hello@mackmedia.co">hello@mackmedia.co</a></li>
+                <li><a class="hover:text-white" href="tel:+13175550123">(317) 555-0123</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-white/40 text-[10px] font-display uppercase tracking-widest"
+        >
+          <p>© 2026 Mack Media. All Rights Reserved.</p>
+          <div class="flex gap-6">
+            <a class="hover:text-white" href="#">Privacy Policy</a>
+            <a class="hover:text-white" href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-4 left-4 right-4 z-50">
+      <button
+        type="button"
+        data-scroll="availability"
+        class="w-full bg-primary text-black py-4 rounded-2xl font-extrabold tracking-wide shadow-2xl shadow-black/30 flex items-center justify-center gap-2"
+      >
+        Check Date Availability <span class="material-symbols-outlined">arrow_upward</span>
+      </button>
+    </div>
+
+    <script>
+      // Scroll helper (all CTAs)
+      function scrollToId(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      document.querySelectorAll("[data-scroll]").forEach((btn) => {
+        btn.addEventListener("click", () => scrollToId(btn.getAttribute("data-scroll")));
+      });
+
+      // Multi-step form logic
+      const step1 = document.getElementById("step1");
+      const step2 = document.getElementById("step2");
+      const step3 = document.getElementById("step3");
+
+      const stepLabel = document.getElementById("stepLabel");
+      const stepTitle = document.getElementById("stepTitle");
+      const stepBar = document.getElementById("stepBar");
+
+      const next1 = document.getElementById("next1");
+      const next2 = document.getElementById("next2");
+      const back2 = document.getElementById("back2");
+      const back3 = document.getElementById("back3");
+
+      const form = document.getElementById("leadForm");
+      const successBox = document.getElementById("successBox");
+      const errorBox = document.getElementById("errorBox");
+
+      function setStep(n) {
+        step1.classList.add("hidden");
+        step2.classList.add("hidden");
+        step3.classList.add("hidden");
+
+        if (n === 1) {
+          step1.classList.remove("hidden");
+          stepLabel.textContent = "Step 1 of 3";
+          stepTitle.textContent = "Date & Location";
+          stepBar.style.width = "33.333%";
+        } else if (n === 2) {
+          step2.classList.remove("hidden");
+          stepLabel.textContent = "Step 2 of 3";
+          stepTitle.textContent = "Your Info";
+          stepBar.style.width = "66.666%";
+        } else {
+          step3.classList.remove("hidden");
+          stepLabel.textContent = "Step 3 of 3";
+          stepTitle.textContent = "Final Details";
+          stepBar.style.width = "100%";
+        }
+      }
+
+      function validateStep1() {
+        const date = document.getElementById("weddingDate");
+        const city = document.getElementById("venueCity");
+        const service = document.getElementById("serviceNeeded");
+        return date.checkValidity() && city.checkValidity() && service.checkValidity();
+      }
+
+      function validateStep2() {
+        const name = document.getElementById("fullName");
+        const email = document.getElementById("email");
+        return name.checkValidity() && email.checkValidity();
+      }
+
+      next1.addEventListener("click", () => {
+        if (!validateStep1()) {
+          // Trigger native browser validation UI
+          document.getElementById("weddingDate").reportValidity();
+          document.getElementById("venueCity").reportValidity();
+          document.getElementById("serviceNeeded").reportValidity();
+          return;
+        }
+        setStep(2);
+      });
+
+      back2.addEventListener("click", () => setStep(1));
+
+      next2.addEventListener("click", () => {
+        if (!validateStep2()) {
+          document.getElementById("fullName").reportValidity();
+          document.getElementById("email").reportValidity();
+          return;
+        }
+        setStep(3);
+      });
+
+      back3.addEventListener("click", () => setStep(2));
+
+      // Netlify form submit via fetch to keep user on-page (optional)
+      // Netlify will still capture the submission.
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        errorBox.classList.add("hidden");
+        successBox.classList.add("hidden");
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+          });
+
+          if (!res.ok) throw new Error("Network response was not ok");
+
+          // Show success and reset
+          step1.classList.add("hidden");
+          step2.classList.add("hidden");
+          step3.classList.add("hidden");
+          successBox.classList.remove("hidden");
+          form.reset();
+
+          // Optional: scroll to the success message
+          scrollToId("availability");
+
+          // OPTIONAL: fire analytics events here (GA4 / Google Ads)
+          // gtag('event', 'lead_submit', { 'event_category': 'Lead', 'event_label': 'Mack Media Availability' });
+
+        } catch (err) {
+          errorBox.classList.remove("hidden");
+        }
+      });
+
+      // Initialize
+      setStep(1);
+    </script>
+  </body>
+</html>

@@ -1344,12 +1344,12 @@ try {
   }
 }
 
+}); // ✅ THIS was missing — closes the submit event listener
 
+// Initialize
+setStep(1);
 
-      // Initialize
-      setStep(1);
-
-      // Portfolio Load More
+// Portfolio Load More
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 const loadMoreHint = document.getElementById("loadMoreHint");
 
@@ -1379,7 +1379,7 @@ if (loadMoreBtn) {
     }
   });
 }
+</script>
 
-    </script>
   </body>
 </html>

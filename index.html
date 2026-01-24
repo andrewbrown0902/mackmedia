@@ -876,18 +876,33 @@
             </div>
 
             <!-- STEP 2 -->
-            <div id="step2" class="space-y-4 font-display hidden">
-              <div class="space-y-2">
-                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="fullName">Your Name</label>
-                <input
-                  id="fullName"
-                  name="name"
-                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
-                  placeholder="First & Last Name"
-                  type="text"
-                  required
-                />
-              </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="space-y-2">
+    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="firstName">First Name</label>
+    <input
+      id="firstName"
+      name="first_name"
+      class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+      placeholder="First name"
+      type="text"
+      autocomplete="given-name"
+      required
+    />
+  </div>
+
+  <div class="space-y-2">
+    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="lastName">Last Name</label>
+    <input
+      id="lastName"
+      name="last_name"
+      class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+      placeholder="Last name"
+      type="text"
+      autocomplete="family-name"
+      required
+    />
+  </div>
+</div>
 
               <div class="space-y-2">
                 <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="email">Email Address</label>
@@ -1185,11 +1200,13 @@ const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/9H58XUAMQbeK
         return date.checkValidity() && city.checkValidity() && service.checkValidity();
       }
 
-      function validateStep2() {
-        const name = document.getElementById("fullName");
-        const email = document.getElementById("email");
-        return name.checkValidity() && email.checkValidity();
-      }
+function validateStep2() {
+  const first = document.getElementById("firstName");
+  const last = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  return first.checkValidity() && last.checkValidity() && email.checkValidity();
+}
+
 
       next1.addEventListener("click", () => {
         if (!validateStep1()) {
@@ -1206,8 +1223,10 @@ const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/9H58XUAMQbeK
 
       next2.addEventListener("click", () => {
         if (!validateStep2()) {
-          document.getElementById("fullName").reportValidity();
-          document.getElementById("email").reportValidity();
+document.getElementById("firstName").reportValidity();
+document.getElementById("lastName").reportValidity();
+document.getElementById("email").reportValidity();
+
           return;
         }
         setStep(3);

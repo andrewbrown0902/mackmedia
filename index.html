@@ -875,80 +875,83 @@
               </p>
             </div>
 
-            <!-- STEP 2 -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- STEP 2 -->
+<div id="step2" class="space-y-4 font-display hidden">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="space-y-2">
+      <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="firstName">First Name</label>
+      <input
+        id="firstName"
+        name="first_name"
+        class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+        placeholder="First name"
+        type="text"
+        autocomplete="given-name"
+        required
+      />
+    </div>
+
+    <div class="space-y-2">
+      <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="lastName">Last Name</label>
+      <input
+        id="lastName"
+        name="last_name"
+        class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
+        placeholder="Last name"
+        type="text"
+        autocomplete="family-name"
+        required
+      />
+    </div>
+  </div>
+
   <div class="space-y-2">
-    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="firstName">First Name</label>
+    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="email">Email Address</label>
     <input
-      id="firstName"
-      name="first_name"
+      id="email"
+      name="email"
       class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
-      placeholder="First name"
-      type="text"
-      autocomplete="given-name"
+      placeholder="you@example.com"
+      type="email"
       required
     />
   </div>
 
   <div class="space-y-2">
-    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="lastName">Last Name</label>
+    <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="phone">Phone (optional)</label>
     <input
-      id="lastName"
-      name="last_name"
+      id="phone"
+      name="phone"
       class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
-      placeholder="Last name"
-      type="text"
-      autocomplete="family-name"
-      required
+      placeholder="(317) 555-0123"
+      type="tel"
+      inputmode="tel"
     />
   </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+    <button
+      type="button"
+      id="back2"
+      class="w-full py-3 rounded-xl border border-neutral-grey text-text-main font-bold hover:border-primary transition-all"
+    >
+      Back
+    </button>
+    <button
+      type="button"
+      id="next2"
+      class="w-full bg-primary text-black py-3 rounded-xl font-bold hover:bg-primary/90 transition-all"
+    >
+      Next: Final Details
+    </button>
+  </div>
+
+  <p class="text-center text-[10px] text-text-sub font-display">
+    We’ll only use this to respond about availability & pricing.
+  </p>
+
 </div>
-
-              <div class="space-y-2">
-                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="email">Email Address</label>
-                <input
-                  id="email"
-                  name="email"
-                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
-                  placeholder="you@example.com"
-                  type="email"
-                  required
-                />
-              </div>
-
-              <div class="space-y-2">
-                <label class="text-[10px] font-bold text-text-main uppercase tracking-widest" for="phone">Phone (optional)</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  class="w-full bg-neutral-grey border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary"
-                  placeholder="(317) 555-0123"
-                  type="tel"
-                  inputmode="tel"
-                />
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
-                <button
-                  type="button"
-                  id="back2"
-                  class="w-full py-3 rounded-xl border border-neutral-grey text-text-main font-bold hover:border-primary transition-all"
-                >
-                  Back
-                </button>
-                <button
-                  type="button"
-                  id="next2"
-                  class="w-full bg-primary text-black py-3 rounded-xl font-bold hover:bg-primary/90 transition-all"
-                >
-                  Next: Final Details
-                </button>
-              </div>
-
-              <p class="text-center text-[10px] text-text-sub font-display">
-                We’ll only use this to respond about availability & pricing.
-              </p>
-            </div>
 
             <!-- STEP 3 -->
             <div id="step3" class="space-y-4 font-display hidden">

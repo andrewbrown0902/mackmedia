@@ -1282,56 +1282,68 @@ form.addEventListener("submit", async (e) => {
     payload.page_url = window.location.href;
     payload.user_agent = navigator.userAgent;
 
-    // 1) PRIMARY: send to GHL webhook (JSON)
-    const ghRes = await fetch(GHL_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-
-    if (!ghRes.ok) throw new Error("GHL webhook failed");
-
-    // Success UI
-    step1.classList.add("hidden");
-    step2.classList.add("hidden");
-    step3.classList.add("hidden");
-    successBox.classList.remove("hidden");
-    form.reset();
-    scrollToId("availability");
-
-    return; // IMPORTANT: don't fall through to Netlify
-  } catch (err) {
-    console.error("GHL webhook failed:", err);
-  }
-
-  // 2) FALLBACK: Netlify form submit (urlencoded)
-  try {
-    const formData = new FormData(form);
-    const netlifyRes = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    });
-
-    if (!netlifyRes.ok) throw new Error("Netlify submit failed");
-
-    // Success UI (even if only fallback worked)
-    step1.classList.add("hidden");
-    step2.classList.add("hidden");
-    step3.classList.add("hidden");
-    successBox.classList.remove("hidden");
-    form.reset();
-    scrollToId("availability");
-  } catch (fallbackErr) {
-    console.error("Netlify fallback failed:", fallbackErr);
-    errorBox.classList.remove("hidden");
-  } finally {
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
-    }
-  }
+// 1) PRIMARY: send to GHL webhook (JSON)
+const ghRes = await fetch(GHL_WEBHOOK_URL, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(payload),
 });
+
+if (!ghRes.ok) throw new Error("GHL webhook failed");
+
+// 🔥 GTM conversion event (PRIMARY success)
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: "lead_submit_success"
+});
+
+// Success UI
+step1.classList.add("hidden");
+step2.classList.add("hidden");
+step3.classList.add("hidden");
+successBox.classList.remove("hidden");
+form.reset();
+scrollToId("availability");
+
+return; // IMPORTANT: don't fall through to Netlify
+} catch (err) {
+  console.error("GHL webhook failed:", err);
+}
+
+// 2) FALLBACK: Netlify form submit (urlencoded)
+try {
+  const formData = new FormData(form);
+  const netlifyRes = await fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  });
+
+  if (!netlifyRes.ok) throw new Error("Netlify submit failed");
+
+  // 🔥 GTM conversion event (FALLBACK success)
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "lead_submit_success"
+  });
+
+  // Success UI (even if only fallback worked)
+  step1.classList.add("hidden");
+  step2.classList.add("hidden");
+  step3.classList.add("hidden");
+  successBox.classList.remove("hidden");
+  form.reset();
+  scrollToId("availability");
+} catch (fallbackErr) {
+  console.error("Netlify fallback failed:", fallbackErr);
+  errorBox.classList.remove("hidden");
+} finally {
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+  }
+}
+
 
 
       // Initialize

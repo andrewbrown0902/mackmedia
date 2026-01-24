@@ -1123,6 +1123,9 @@
     </div>
 
     <script>
+      // ====== GHL Webhook (primary) ======
+const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/9H58XUAMQbeKoImoPSFv/webhook-trigger/1QfQRiyM2C53c0CxmWo8";
+
       // Scroll helper (all CTAs)
       function scrollToId(id) {
         const el = document.getElementById(id);
@@ -1212,40 +1215,78 @@
 
       back3.addEventListener("click", () => setStep(2));
 
-      // Netlify form submit via fetch to keep user on-page (optional)
-      // Netlify will still capture the submission.
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        errorBox.classList.add("hidden");
-        successBox.classList.add("hidden");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  errorBox.classList.add("hidden");
+  successBox.classList.add("hidden");
 
-        try {
-          const formData = new FormData(form);
-          const res = await fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-          });
+  const submitBtn = document.getElementById("submitBtn");
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.classList.add("opacity-70", "cursor-not-allowed");
+  }
 
-          if (!res.ok) throw new Error("Network response was not ok");
+  try {
+    const formData = new FormData(form);
 
-          // Show success and reset
-          step1.classList.add("hidden");
-          step2.classList.add("hidden");
-          step3.classList.add("hidden");
-          successBox.classList.remove("hidden");
-          form.reset();
+    // Convert form data → plain object for JSON webhook
+    const payload = Object.fromEntries(formData.entries());
 
-          // Optional: scroll to the success message
-          scrollToId("availability");
+    // Helpful context (optional)
+    payload.page_url = window.location.href;
+    payload.user_agent = navigator.userAgent;
 
-          // OPTIONAL: fire analytics events here (GA4 / Google Ads)
-          // gtag('event', 'lead_submit', { 'event_category': 'Lead', 'event_label': 'Mack Media Availability' });
+    // 1) PRIMARY: send to GHL webhook (JSON)
+    const ghRes = await fetch(GHL_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
 
-        } catch (err) {
-          errorBox.classList.remove("hidden");
-        }
-      });
+    if (!ghRes.ok) throw new Error("GHL webhook failed");
+
+    // Success UI
+    step1.classList.add("hidden");
+    step2.classList.add("hidden");
+    step3.classList.add("hidden");
+    successBox.classList.remove("hidden");
+    form.reset();
+    scrollToId("availability");
+
+    return; // IMPORTANT: don't fall through to Netlify
+  } catch (err) {
+    console.error("GHL webhook failed:", err);
+  }
+
+  // 2) FALLBACK: Netlify form submit (urlencoded)
+  try {
+    const formData = new FormData(form);
+    const netlifyRes = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    if (!netlifyRes.ok) throw new Error("Netlify submit failed");
+
+    // Success UI (even if only fallback worked)
+    step1.classList.add("hidden");
+    step2.classList.add("hidden");
+    step3.classList.add("hidden");
+    successBox.classList.remove("hidden");
+    form.reset();
+    scrollToId("availability");
+  } catch (fallbackErr) {
+    console.error("Netlify fallback failed:", fallbackErr);
+    errorBox.classList.remove("hidden");
+  } finally {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+    }
+  }
+});
+
 
       // Initialize
       setStep(1);
